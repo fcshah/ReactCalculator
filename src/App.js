@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import KeypadComponent from './components/KeypadComponent'
 import ResultComponent from './components/ResultComponent'
+//import UserInputStateUpdate from './components/UserInputStateUpdate'
 
 class App extends Component {
 
@@ -64,8 +65,9 @@ render() {
       <div>
           <div className="calculator-body">
               <h1>Simple Calculator</h1>
-              <ResultComponent result={this.state.result}/>
+              <ResultComponent result={this.state.result} />
               <KeypadComponent onClick={this.onClick}/>
+              {/* <UserInputStateUpdate/> */}
           </div>
       </div>
   );
